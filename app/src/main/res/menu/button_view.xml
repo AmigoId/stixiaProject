@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/text"
+          android:title="Текст"
+          android:icon="@drawable/text"
+          android:orderInCategory="0"/>
+    <item android:id="@+id/autor"
+        android:title="Автор"
+        android:icon="@drawable/autor"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/top"
+        android:title="Лучшее"
+        android:icon="@drawable/top"
+        android:orderInCategory="2"/>
+    <item android:id="@+id/sub"
+        android:title="Подписки"
+        android:icon="@drawable/sub"
+        android:orderInCategory="3"/>
+    <item android:id="@+id/like"
+        android:title="Колекция"
+        android:icon="@drawable/like"
+        android:orderInCategory="4"/>
+
+
+
+</menu>
