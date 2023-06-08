@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">stixia</string>
+    <string name="app_name">Stixia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="back4app_server_url" translatable="false">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id" translatable="false">x2I80xZSCNidXwzPkid4Az76sWsYn2Q8zzNvZB55</string>
+    <string name="back4app_client_key" translatable="false">iZ8XBbLOgnuI5LjLrHAo0FpKBHFKOdior3KLxkMG</string>
+
 </resources>

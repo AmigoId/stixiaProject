@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="630dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -22,7 +22,7 @@
                 android:layout_gravity="start"
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
-                android:src="@drawable/logo1" />
+                android:src="@mipmap/logo1" />
 
             <TextView
                 android:layout_width="307dp"
@@ -32,7 +32,7 @@
                 android:layout_weight="1"
                 android:gravity="start|right"
                 android:text="Подписки"
-                android:textColor="@color/text"
+                android:textColor="@color/black2"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -44,6 +44,7 @@
             android:background="@android:color/black" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSub"
             android:layout_width="match_parent"
             android:layout_height="546dp"
             android:layout_margin="10dp">

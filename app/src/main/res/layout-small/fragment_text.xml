@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/b4"
+        app:srcCompat="@mipmap/b4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/textBack35"
+            android:gravity="center"
+            android:shadowColor="@color/text"
+            android:shadowDx="2"
+            android:shadowDy="-1"
+            android:shadowRadius="1"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/textBack35"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textName5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/textBack"
+                    android:gravity="center"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text="Описание"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/textBack35"
+                    android:gravity="left"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@color/textBack35"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/text_channel_Image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        tools:src="@tools:sample/avatars" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_channel_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:gravity="start"
+                            android:shadowColor="@color/text"
+                            android:shadowDx="2"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:text="Name"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/text_channel_button"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:text="Подписаться" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:shadowColor="@color/text"
+                                android:shadowDx="2"
+                                android:shadowDy="-1"
+                                android:shadowRadius="1"
+                                android:text="Ценителей:"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/text_channel_countSub"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:shadowColor="@color/text"
+                                android:shadowDx="2"
+                                android:shadowDy="-1"
+                                android:shadowRadius="1"
+                                android:text="000"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/a1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageR"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/a2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/textBack35"
+                    android:gravity="center"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text="Просмотры"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textcountOfView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/textBack35"
+                    android:gravity="center"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/textBack35"
+                    android:gravity="center"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text="Лайки"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TextCoutnOfLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/textBack35"
+                    android:gravity="center"
+                    android:shadowColor="@color/text"
+                    android:shadowDx="2"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/textLikePoem"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/text"
+                android:gravity="center"
+                android:text="Понравилось"
+                android:textSize="10sp"
+                app:rippleColor="@color/black"
+                app:strokeColor="#FFD4D4" />
+
+            <Button
+                android:id="@+id/goToChannelAuthor"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/text"
+                android:text="дневник"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

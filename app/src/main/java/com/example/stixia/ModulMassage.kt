@@ -7,11 +7,13 @@ class ModulMassage  : ViewModel(){
     val messageToAc: MutableLiveData<String> by lazy{
         MutableLiveData<String>()
     }
-    val messageToF1: MutableLiveData<String> by lazy{
+    val messageFromPoemToAuthorId: MutableLiveData<String> by lazy{
         MutableLiveData<String>()
     }
-    val messageToF2: MutableLiveData<String> by lazy{
+    val messageToAcId: MutableLiveData<String> by lazy{
         MutableLiveData<String>()
     }
-
+    val messageToFTextId: MutableLiveData<poem> by lazy{
+        MutableLiveData<poem>()
+    }
 }

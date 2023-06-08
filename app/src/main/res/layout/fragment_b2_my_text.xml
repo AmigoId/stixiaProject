@@ -7,82 +7,195 @@
     tools:context=".b2FragmentMyText">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/b4"
-        app:srcCompat="@drawable/b4" />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textName"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@color/textBack35"
-            android:gravity="center"
-            android:shadowColor="@color/text"
-            android:shadowDx="2"
-            android:shadowDy="-1"
-            android:shadowRadius="1"
-            android:text="Название"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/editName"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@color/textBack35"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:maxLength="30"
-            android:nextFocusDown="@id/editText"
-            android:shadowDx="2"
-            android:shadowDy="-1"
-            android:shadowRadius="1"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-
-        <TextView
-            android:background="@color/textBack35"
-            android:id="@+id/textName2"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:shadowColor="@color/text"
-            android:shadowDx="2"
-            android:shadowDy="-1"
-            android:shadowRadius="1"
-            android:text="Текст"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/b4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/b4" />
 
-        <AutoCompleteTextView
-            android:background="@color/textBack35"
-            android:id="@+id/editText"
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/textBack35"
+                android:gravity="center"
+                android:paddingStart="70dp"
+                android:paddingEnd="70dp"
+                android:shadowColor="@color/text"
+                android:shadowDx="2"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="Название"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/textBack35"
+                android:gravity="center"
+                android:maxLength="30"
+                android:nextFocusDown="@id/editText"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:shadowDx="2"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:nextFocusDown="@id/editBio"
-            android:nextFocusForward="@id/editBio"
-            android:shadowColor="@color/text"
-            android:shadowDx="2"
-            android:shadowDy="-1"
-            android:shadowRadius="1"
-            android:textColor="@color/white" />
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+            app:layout_constraintVertical_bias="0.26">
 
-    </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/textBack35"
+                        android:gravity="center"
+                        android:shadowColor="@color/text"
+                        android:shadowDx="2"
+                        android:shadowDy="-1"
+                        android:shadowRadius="1"
+                        android:text="Текст"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/textBack35"
+                        android:gravity="start"
+                        android:nextFocusDown="@id/editBio"
+                        android:nextFocusForward="@id/editBio"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:shadowColor="@color/text"
+                        android:shadowDx="2"
+                        android:shadowDy="-1"
+                        android:shadowRadius="1"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/textBack35"
+                        android:gravity="center"
+                        android:shadowColor="@color/text"
+                        android:shadowDx="2"
+                        android:shadowDy="-1"
+                        android:shadowRadius="1"
+                        android:text="Описание"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editBio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="240dp"
+                        android:background="#000000"
+                        android:backgroundTint="@color/textBack35"
+                        android:gravity="start"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:shadowColor="@color/text"
+                        android:shadowDx="2"
+                        android:shadowDy="-1"
+                        android:shadowRadius="1"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/goMyBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text2"
+                android:text="дневник"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/creatPoem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/text2"
+                android:gravity="center"
+                android:text="Опубликовать"
+                app:rippleColor="@color/black"
+                app:strokeColor="#FFD4D4" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="40dp"
@@ -111,71 +224,6 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/a2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textName3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@color/textBack"
-            android:gravity="center"
-            android:shadowColor="@color/text"
-            android:shadowDx="2"
-            android:shadowDy="-1"
-            android:shadowRadius="1"
-            android:text="Описание"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-
-        <AutoCompleteTextView
-            android:id="@+id/editBio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:background="#000000"
-            android:backgroundTint="@color/textBack"
-            android:gravity="center"
-            android:shadowColor="@color/text"
-            android:shadowDx="2"
-            android:shadowDy="-1"
-            android:shadowRadius="1"
-            android:textColor="@color/white" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/goMyBook"
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:backgroundTint="@color/text"
-                android:text="дневник"
-                android:textSize="14sp" />
-
-            <Button
-                android:id="@+id/creatPoem"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@color/text"
-                android:gravity="center"
-                android:text="Опубликовать"
-                app:rippleColor="@color/black"
-                app:strokeColor="#FFD4D4" />
-
-        </LinearLayout>
-
     </LinearLayout>
 
 </FrameLayout>

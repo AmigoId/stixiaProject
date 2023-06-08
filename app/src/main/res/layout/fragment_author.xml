@@ -22,7 +22,7 @@
 
                 <ImageView
 
-                    android:id="@+id/imageView3"
+                    android:id="@+id/ProfilImage"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_gravity="start"
@@ -33,20 +33,21 @@
                     tools:src="@drawable/ic_launcher_background" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/ProfilSub"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:insetBottom="3dp"
                     android:text="Подписаться"
-                    android:textSize="8sp" />
+                    android:textSize="8sp"
+                    android:backgroundTint="@color/text2"/>
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/ProfilCountOfSub"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Ценителей:1234" />
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -57,16 +58,16 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/profilName"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="Имя"
-                    android:textColor="#000000"
+                    android:textColor="@color/black2"
                     android:textSize="28sp" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/ProfilBio"
                     android:layout_width="match_parent"
                     android:layout_height="72dp"
                     android:layout_weight="1"
@@ -85,14 +86,16 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/authorRv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
