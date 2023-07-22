@@ -378,6 +378,7 @@ class FragmentText : Fragment() {
                 bindingClass.textChannelImage.setImageResource(
                     it2[0].get("imageId").toString().toInt()
                 )
+
                 bindingClass.textChannelName.text = it2[0].get("username").toString()
                 bindingClass.TextCoutnOfLike.text = poems[indexPoem].countLike.toString()
                 bindingClass.textcountOfView.text = poems[indexPoem].countView.toString()
